@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人简历</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/vue2.6.0.main.js"></script>
+		<script type="text/javascript" src="js/utils.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="head">
+				<div class="title">
+					<h1> {{ title.name }} </h1>
+					<h3> {{ title.subTitle }} </h3>
+				</div>
+				<div class="image">
+					<img src="images/img.png">
+				</div>
+			</div>
+			<div id="content">
+				<div class="content-item">
+					<h1>个人信息</h1>
+					<ul class="lettle-container">
+						<li class="line-li3" v-for="(value, key) in persionInfo"><span v-html="key"></span>: &nbsp;<span v-html="value"></span> </li>
+					</ul>
+				</div>
+				<hr/>
+				<div class="content-item">
+					<h1>求职意向</h1>
+					<ul class="lettle-container">
+						<li class="line-li3" v-for="(value, key) in jobIntention"><span v-html="key"></span>: &nbsp;<span v-html="value"></span> </li>
+					</ul>
+				</div>
+				<hr/>
+				<div class="content-item">
+					<h1>教育背景</h1>
+					<ul class="lettle-container">
+						<li class="line-li3" v-for="(value, key) in educationalBackground"><span v-html="key"></span>: &nbsp;<span v-html="value"></span> </li>
+					</ul>
+				</div>
+				<hr/>
+				<div class="content-item">
+					<h1>自我评价</h1>
+					<ol class="lettle-container self-evaluation">
+						<li v-for="item in selfEvaluation"> {{ item }} </li>
+					</ol>
+				</div>
+				<hr/>
+				<div class="content-item">
+					<h1>工作经历</h1>
+					<div v-for="item in workExperience" class="lettle-container">
+						<div v-for="(value, key) in item" :class="[{'line-span3': key !== '工作描述'}]">
+							<div v-if="key === '工作描述'">
+								{{ key }}: &nbsp;
+								<ol>
+									<li v-for="one in value">{{ one }}</li>
+								</ol>
+							</div>
+							<span v-else>
+								<span v-html="key"></span>: &nbsp;<span v-html="value"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="content-item">
+					<h1>项目经验</h1>
+					<div v-for="item in projectExperience" class="lettle-container">
+						<div v-for="(value, key) in item.multipleRow" class="line-span3">
+							<span v-html="key"></span>: &nbsp;<span v-html="value"></span>
+						</div>
+						<div v-for="(value, key) in item.singleRow" class="line-span">
+							<span v-if="key === '个人职责'">
+								{{ key }}: &nbsp;
+								<ol>
+									<li v-for="one in value">{{ one }}</li>
+								</ol>
+							</span>
+							<span v-else-if="key === '项目描述'">
+								<span v-html="key"></span>: &nbsp;<div v-html="value" style="margin-left: 4rem;"></div>
+							</span>
+							<span v-else>
+								<span v-html="key"></span>: &nbsp;<span v-html="value"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="content-item">
+					<h1>专业技能</h1>
+					<table>
+						<tr v-for="item in expertise">
+							<td v-for="value in item">{{ value }}</td>
+						</tr>
+					</table>
+				</div>
+				<hr/>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html body {
+	font-family: "微软雅黑";
+	font-size: 1rem;
+	width: 100%;
+	min-height: 100%;
+	background-color: aliceblue;
+}
+
+#container {
+	width: 85rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+#head {
+	width: 100%;
+	background-color: black;
+	height: 10rem;
+	position: relative;
+}
+
+#head .title {
+	display: inline-block;
+	position: absolute;
+	left: 2rem;
+	bottom: 1.8rem;
+	text-align: center;
+	color: white;
+}
+
+#head .title h1 {
+	font-size: 3rem;
+}
+
+#head .image {
+	position: absolute;
+	display: inline-block;
+	right: 2rem;
+	bottom: -3rem;
+}
+
+#head .image img {
+	width: 8rem;
+	height: 8rem;
+	border-radius: 4rem;
+}
+
+#content {
+	border-left: 1px solid #9a9a9a;
+	border-right: 1px solid #9a9a9a;
+}
+
+#content .content-item {
+	margin: 1.5rem 0;
+	margin-left: 2rem;
+}
+
+#content .content-item .lettle-container {
+	margin-left: 4rem;
+	max-width: 100%;
+	padding-top: 1.5rem;
+	font-size: 1.2rem;
+}
+
+.content-item  li {
+	height: 2rem;
+	line-height: 2rem;
+}
+
+.line-li3 {
+	display: inline-block;
+	width: 33.33%;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.line-li {
+	display: block;
+	width: 100%;
+}
+
+.line-span3 {
+	width: 33.33%;
+	display: inline-block;
+	height: 2rem;
+	line-height: 2rem;
+}
+
+.line-span {
+	width: 100%;
+	display: inline-block;
+	height: 2rem;
+	line-height: 2rem;
+}
+
+.lettle-container ol {
+	margin-left: 5rem;
+}
+
+.self-evaluation {
+	margin-left: 5rem !important;
+}
+
+table {
+	width: 80%;
+	border: 0.0625rem dotted #9a9a9a;
+	border-collapse:collapse;
+	margin-left: 4rem;
+	table-layout: fixed;
+	margin-top: 1.5rem;
+	font-size: 1.2rem;
+}
+
+table td {
+	border: 0.0625rem dotted #9a9a9a;
+	text-align: center;
+	height: 2rem;
+	line-height: 2rem;
+}
