@@ -21,41 +21,41 @@
 			</div>
 			<div id="content">
 				<div class="content-item">
-					<h1>个人信息</h1>
+					<h2>个人信息</h2>
 					<ul class="lettle-container">
 						<li class="line-li3" v-for="(value, key) in persionInfo"><span v-html="key"></span>: &nbsp;<span v-html="value"></span> </li>
 					</ul>
 				</div>
 				<hr/>
 				<div class="content-item">
-					<h1>求职意向</h1>
+					<h2>求职意向</h2>
 					<ul class="lettle-container">
 						<li class="line-li3" v-for="(value, key) in jobIntention"><span v-html="key"></span>: &nbsp;<span v-html="value"></span> </li>
 					</ul>
 				</div>
 				<hr/>
 				<div class="content-item">
-					<h1>教育背景</h1>
+					<h2>教育背景</h2>
 					<ul class="lettle-container">
 						<li class="line-li3" v-for="(value, key) in educationalBackground"><span v-html="key"></span>: &nbsp;<span v-html="value"></span> </li>
 					</ul>
 				</div>
 				<hr/>
 				<div class="content-item">
-					<h1>自我评价</h1>
+					<h2>自我评价</h2>
 					<ol class="lettle-container self-evaluation">
 						<li v-for="item in selfEvaluation"> {{ item }} </li>
 					</ol>
 				</div>
 				<hr/>
 				<div class="content-item">
-					<h1>工作经历</h1>
+					<h2>工作经历</h2>
 					<div v-for="item in workExperience" class="lettle-container">
 						<div v-for="(value, key) in item" :class="[{'line-span3': key !== '工作描述'}]">
 							<div v-if="key === '工作描述'">
 								{{ key }}: &nbsp;
 								<ol>
-									<li v-for="one in value">{{ one }}</li>
+									<li v-for="one in value"><span>{{ one }}</span></li>
 								</ol>
 							</div>
 							<span v-else>
@@ -66,7 +66,7 @@
 				</div>
 				<hr/>
 				<div class="content-item">
-					<h1>项目经验</h1>
+					<h2>项目经验</h2>
 					<div v-for="item in projectExperience" class="lettle-container">
 						<div v-for="(value, key) in item.multipleRow" class="line-span3">
 							<span v-html="key"></span>: &nbsp;<span v-html="value"></span>
@@ -75,11 +75,11 @@
 							<span v-if="key === '个人职责'">
 								{{ key }}: &nbsp;
 								<ol>
-									<li v-for="one in value">{{ one }}</li>
+									<li v-for="one in value"><span>{{ one }}</span></li>
 								</ol>
 							</span>
 							<span v-else-if="key === '项目描述'">
-								<span v-html="key"></span>: &nbsp;<div v-html="value" style="margin-left: 4rem;"></div>
+								<span v-html="key"></span>: &nbsp;<p v-html="value" style="margin-left: 4rem;"></p>
 							</span>
 							<span v-else>
 								<span v-html="key"></span>: &nbsp;<span v-html="value"></span>
@@ -89,7 +89,7 @@
 				</div>
 				<hr/>
 				<div class="content-item">
-					<h1>专业技能</h1>
+					<h2>专业技能</h2>
 					<table>
 						<tr v-for="item in expertise">
 							<td v-for="value in item">{{ value }}</td>

@@ -5,18 +5,20 @@
 
 html body {
 	font-family: "微软雅黑";
-	font-size: 1rem;
+	font-size: 1.1rem;
 	width: 100%;
 	min-height: 100%;
 	background-color: aliceblue;
 }
 
 #container {
-	width: 85rem;
+	width: 65.625rem;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	margin: 0 auto;
+	border-left: 1px solid #9a9a9a;
+	border-right: 1px solid #9a9a9a;
 }
 
 #head {
@@ -52,21 +54,15 @@ html body {
 	border-radius: 4rem;
 }
 
-#content {
-	border-left: 1px solid #9a9a9a;
-	border-right: 1px solid #9a9a9a;
-}
-
 #content .content-item {
 	margin: 1.5rem 0;
 	margin-left: 2rem;
 }
 
 #content .content-item .lettle-container {
-	margin-left: 4rem;
+	margin-left: 2rem;
 	max-width: 100%;
-	padding-top: 1.5rem;
-	font-size: 1.2rem;
+	margin-top: 1.5rem;
 }
 
 .content-item  li {
@@ -104,11 +100,11 @@ a {
 }
 
 .lettle-container ol {
-	margin-left: 5rem;
+	margin-left: 3rem;
 }
 
 .self-evaluation {
-	margin-left: 5rem !important;
+	margin-left: 3rem !important;
 }
 
 table {
@@ -118,7 +114,6 @@ table {
 	margin-left: 4rem;
 	table-layout: fixed;
 	margin-top: 1.5rem;
-	font-size: 1.2rem;
 }
 
 table td {
