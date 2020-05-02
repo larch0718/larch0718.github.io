@@ -1,14 +1,14 @@
 {
 	"title": {
 		"name": "章松",
-		"subTitle": "——PHP工程师-上海-5年——"
+		"subTitle": "——PHP工程师-上海-6年——"
 	},
 	"persionInfo": {
 		"姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名": "章松",
 		"年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄": 26,
 		"电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话": "17621375921",
 		"邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱": "zhangsonglch@163.com",
-		"工作经验": "5年",
+		"工作经验": "6年",
 		"现住城市": "上海市浦东新区",
 		"社交主页": "<a href='https://larch0718.github.io'>https://larch0718.github.io</a>"
 	},
@@ -22,10 +22,10 @@
 		"专&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业": "计算机通信"
 	},
 	"selfEvaluation": [
-		"学习能力强，自学了PHP，平时还自学过shell、java、c#、Vue 等，短时间内能上手",
+		"精通PHP，学习能力强，平时还自学过shell、java、c#、AngularJS等",
 		"性格随和，平时喜欢打游戏、摄影、轮滑等，能够快速融入到新的环境中",
-		"有过 3 年团队开发，有良好的沟通能力和团队协作能力",
-		"有良好的编码习惯，编码风格统一"
+		"4年以上团队开发经验，逻辑思维强，有良好的沟通能力和团队协作能力",
+		"有良好的编码习惯，能写出符合PSR规范的代码，编码风格统一"
 	],
 	"workExperience": [
 		{
