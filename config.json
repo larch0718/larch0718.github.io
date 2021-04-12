@@ -5,10 +5,10 @@
 	},
 	"persionInfo": {
 		"姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名": "章松",
-		"年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄": 26,
+		"年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄": 27,
 		"电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话": "17621375921",
 		"邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱": "zhangsonglch@163.com",
-		"工作经验": "6年",
+		"工作经验": "7年",
 		"现住城市": "上海市浦东新区",
 		"社交主页": "<a href='https://larch0718.github.io'>https://larch0718.github.io</a>"
 	},
@@ -22,12 +22,23 @@
 		"专&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业": "计算机通信"
 	},
 	"selfEvaluation": [
-		"精通PHP，学习能力强，平时还自学过shell、java、c#、AngularJS等",
+		"精通PHP，学习能力强，平时还自学过shell、java、c#、Vue等",
 		"性格随和，平时喜欢打游戏、摄影、轮滑等，能够快速融入到新的环境中",
 		"4年以上团队开发经验，逻辑思维强，有良好的沟通能力和团队协作能力",
 		"有良好的编码习惯，能写出符合PSR规范的代码，编码风格统一"
 	],
 	"workExperience": [
+		{
+			"公司名称": "浙江上扬商业设备科技股份有限公司",
+			"职位名称": "PHP 工程师",
+			"在职时间": "2020.8~现在",
+			"工作描述": [
+				"参与CRM二次开发",
+				"多组织管理结构设计",
+				"研究人脸识别开源算法，并进行服务化",
+				"设计云项目API设计和开发"
+			]
+		},
 		{
 			"公司名称": "上海水渺信息技术有限公司",
 			"职位名称": "PHP 高级工程师",
@@ -76,6 +87,28 @@
 		}
 	],
 	"projectExperience": [
+		{
+			"multipleRow": {
+				"项目名称": "库管云",
+				"公司名称": "浙江上扬商业设备科技股份有限公司",
+				"项目时间": "2020.08-现在",
+				"链&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;接": "<a href='https://www.zhipeisz.com'>https://www.zhipeisz.com</a>",
+				"后端框架": "Vtiger",
+				"移动端框架": "VUE2"
+			},
+			"singleRow": {
+				"运行环境": "Lamp（Linux + Nginx + Mysql + Php",
+				"主要技术": "jQuery、html、css3、json、vue2",
+				"项目描述": "项目采用模块化的结构，涉及内容比较多，针对不同的组织开放不同模块的权限，主要涉及视频监控、项目管理、智能算法等方向",
+				"个人职责": [
+					"多组织架构搭建, 实现一个组织一个库的业务需要",
+					"监控中心模块， 接入视频，实现分屏播放等功能",
+					"签到模块，主要是移动端项目，PC端仅负责数据展示",
+					"研究人脸识别开源算法，并进行服务化",
+					"（独立项目）设计云项目API设计和开发，为商城和库管云项目提供接口"
+				]
+			}
+		},
 		{
 			"multipleRow": {
 				"项目名称": "后台管理系统",
